@@ -4,14 +4,20 @@
         public static void main(String[] args) throws java.io.IOException {
             char ch;
             Scanner sc = new Scanner(System.in);
+            System.out.println("введите символ:");
             ch = (char) System.in.read();
+
+
             do {
-                System.out.println("вы ввели " + ch);
                 ch = (char) System.in.read();
+
+
 
                 System.out.println(ch);
 
 
-            } while (ch != '.');
+            }while (ch != '.') ;
+            if (ch==' ')
+            System.out.println(" пробелов "+ch);
         }
     }
